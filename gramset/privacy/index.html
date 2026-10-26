@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GramSet — Gizlilik Politikası</title>
+<meta name="description" content="GramSet'in gizlilik politikası: hesap yok, sunucu yok, veriler telefonda kalır.">
+<link rel="alternate" hreflang="en" href="en.html">
+<style>
+  :root { color-scheme: light dark; --ink: #111; --paper: #fff; --muted: #666; --line: #e3e3e3; }
+  @media (prefers-color-scheme: dark) { :root { --ink: #f2f2f2; --paper: #000; --muted: #9a9a9a; --line: #2a2a2a; } }
+  html { background: var(--paper); }
+  body { margin: 0; padding: 32px 16px 64px; font: 17px/1.55 -apple-system, "Segoe UI", Roboto, system-ui, sans-serif; color: var(--ink); background: var(--paper); }
+  main { max-width: 680px; margin: 0 auto; }
+  h1 { font-size: 30px; line-height: 1.2; margin: 0 0 4px; }
+  h2 { font-size: 20px; margin: 36px 0 8px; }
+  p, li { margin: 8px 0; }
+  .meta { color: var(--muted); font-size: 15px; margin-bottom: 24px; }
+  .lang { font-size: 15px; }
+  table { border-collapse: collapse; width: 100%; font-size: 15px; margin: 12px 0; }
+  th, td { text-align: left; vertical-align: top; padding: 8px 6px; border-bottom: 1px solid var(--line); }
+  th { color: var(--muted); font-weight: 600; }
+  a { color: inherit; }
+  code { font-size: 90%; }
+</style>
+</head>
+<body>
+<main>
+  <p class="lang"><a href="en.html">English</a></p>
+  <h1>GramSet — Gizlilik Politikası</h1>
+  <p class="meta">Geliştirici: Marulas Studio · Yürürlük: 27 Ekim 2026 · Android uygulaması “GramSet: Kalori &amp; Antrenman” (paket adı <code>com.marulas.gramset</code>)</p>
+
+  <p><strong>Kısaca:</strong> GramSet’te hesap yok, sunucu yok, reklam yok, analitik ya da izleme SDK’sı yok. Yediklerin, antrenmanların, kilon ve diğer tüm kayıtların yalnızca kendi telefonunda durur. Telefonundan bir şey çıkıyorsa bunu sen başlatmışsındır: yedeği paylaşmak, barkod sorgulamak, paylaşım kartı göndermek ya da geri bildirim yazmak gibi.</p>
+
+  <h2>1. Hangi veriler, nerede durur</h2>
+  <p>Uygulamaya girdiğin her şey telefonundaki uygulamaya özel, başka uygulamaların okuyamadığı alanda saklanır:</p>
+  <ul>
+    <li>Yiyecekler, öğün kayıtları, tarifler, sevmediğin yiyecekler ve beslenme hedeflerin</li>
+    <li>Kilo, su, adım, uyku ve vücut ölçülerin</li>
+    <li>Rutinler, antrenman oturumları, setler ve şablonlar</li>
+    <li>İlerleme fotoğrafların (seçtiğin görselin bir kopyası; galerine dokunulmaz)</li>
+    <li>Hatırlatıcı ayarları, tema ve dil gibi tercihlerin</li>
+    <li>Uygulama çökerse teknik bir hata raporu (saat, sürüm, Android sürümü, cihaz modeli ve hata izi). Bu dosyada yediklerin, kilon ya da başka kişisel verin yoktur ve yalnızca sen “Paylaş” dersen telefondan çıkar.</li>
+  </ul>
+  <p>Android’in kendi bulut yedeği ve cihazlar arası aktarımı GramSet için kapalıdır. Verin telefondan yalnızca senin aldığın yedekle taşınır.</p>
+
+  <h2>2. Telefondan ne çıkar (yalnızca sen başlatınca)</h2>
+  <table>
+    <tr><th>İşlem</th><th>Giden veri</th><th>Kime</th></tr>
+    <tr><td>Barkod tarama</td><td>Yalnızca barkod numarası (ve uygulamanın adı-sürümü)</td><td>Open Food Facts, açık bir yiyecek veri tabanı (<a href="https://world.openfoodfacts.org">world.openfoodfacts.org</a>). Tarama Google’ın kod tarayıcısıyla cihazda yapılır; uygulama kamera izni istemez ve görüntüyü görmez.</td></tr>
+    <tr><td>Sesli giriş</td><td>Sesin, telefonun konuşma tanıma servisine gider; uygulama yalnızca tanınan metni alır ve sesi saklamaz</td><td>Telefondaki tanıyıcı (çoğunlukla Google). Cihaz üstü tanıma varsa tercih edilir. Mikrofon izni yalnızca mikrofon düğmesine basınca istenir.</td></tr>
+    <tr><td>Yedek: Paylaş / Dosyaya kaydet / Otomatik yedek</td><td>Tüm kayıtların ve fotoğrafların (.zip)</td><td>Senin seçtiğin uygulama ya da klasör (Drive, Telegram, Dosyalar…). Otomatik yedek yalnızca senin seçtiğin klasöre yazar.</td></tr>
+    <tr><td>CSV dışa aktar</td><td>Günlük özetler ve setler</td><td>Senin seçtiğin uygulama</td></tr>
+    <tr><td>Paylaşım kartı</td><td>Kartta görünen değerler (antrenman, rekor, haftalık özet; kilo istersen gizlenir)</td><td>Senin seçtiğin uygulama</td></tr>
+    <tr><td>Hata raporunu paylaş</td><td>Yukarıdaki hata raporu dosyası</td><td>Senin seçtiğin uygulama</td></tr>
+    <tr><td>Geri bildirim</td><td>Uygulama kendisi bir şey göndermez: e-posta adresini kopyalar ya da geri bildirim formunu tarayıcında açar</td><td>Kendi e-postanla <a href="mailto:gramset.app@gmail.com">gramset.app@gmail.com</a>, ya da Google Formu (yanıtlar geliştiricinin Google hesabında tutulur ve yalnızca geri bildirimi yanıtlamak ve uygulamayı iyileştirmek için kullanılır)</td></tr>
+  </table>
+  <p>İnternet izni yalnızca barkod sorgusu içindir. İnternet olmadan uygulama tam çalışır.</p>
+
+  <h2>3. Health Connect</h2>
+  <p>Health Connect bağlantısı isteğe bağlıdır ve Ayarlar → Health Connect’ten açılır. İzin verirsen GramSet şunları yapar:</p>
+  <ul>
+    <li><strong>Okuma</strong> (her tür için ayrı izin): adım, kilo ve aktif kalori; yalnızca son 30 gün ve uygulama açıkken. Okunan değerler Vücut ekranında gösterilir, uygulamanın kendi kayıtlarına ve senin aldığın yedeklere girer. Elle girdiğin değer her zaman önceliklidir. Aktif kalori yalnızca gösterilir; kalori hedeflerin bundan etkilenmez.</li>
+    <li><strong>Yazma</strong> (isteğe bağlı, ayrı ayrı açılır): bitirdiğin antrenmanlar (ad, başlangıç ve bitiş saati) ve elle girdiğin kilo.</li>
+  </ul>
+  <p>Health Connect’ten okunan veriler yalnızca bu telefonda kalır; hiçbir sunucuya gönderilmez, reklam, analiz ya da başka bir amaçla kullanılmaz, üçüncü taraflarla paylaşılmaz. GramSet’in Health Connect verisini kullanımı ve aktarımı, Sınırlı Kullanım (Limited Use) koşulları dahil olmak üzere <a href="https://support.google.com/googleplay/android-developer/answer/12991134">Health Connect İzinleri Politikası</a>’na uyar. İzinleri istediğin zaman Ayarlar → Health Connect’ten tür tür kapatabilir ya da “Bağlantıyı kes” ile tamamını geri alabilirsin; daha önce okunmuş değerler uygulamada kalır ve istersen tek tek silebilirsin.</p>
+
+  <h2>4. İzinler</h2>
+  <table>
+    <tr><th>İzin</th><th>Neden</th></tr>
+    <tr><td>Bildirimler</td><td>Dinlenme sayacı geri sayımı, hatırlatıcılar ve aylık özet. Reddedersen sayaç ekranda çalışmaya devam eder.</td></tr>
+    <tr><td>Mikrofon</td><td>Yalnızca sesli yemek girişi için, düğmeye basınca istenir.</td></tr>
+    <tr><td>İnternet</td><td>Yalnızca barkod sorgusu (Open Food Facts).</td></tr>
+    <tr><td>Health Connect (adım, kilo, aktif kalori okuma; antrenman ve kilo yazma)</td><td>Yukarıdaki 3. bölüm.</td></tr>
+    <tr><td>Ön plan servisi, titreşim, uyanık tutma, açılışta başlatma</td><td>Dinlenme sayacının ekran kapalıyken çalışması, bitişte titreşim ve hatırlatıcıların telefon yeniden başlayınca yeniden kurulması.</td></tr>
+  </table>
+  <p>Kamera izni yoktur. Konum, kişiler, takvim ya da dosyalara genel erişim istenmez; yedek ve fotoğraf için Android’in kendi seçicileri kullanılır ve uygulama yalnızca senin seçtiğin dosya ya da klasöre erişir.</p>
+
+  <h2>5. Verini dışa aktarma ve silme</h2>
+  <ul>
+    <li><strong>Dışa aktar:</strong> Ayarlar → Veri → yedek (.zip içinde okunabilir JSON ve fotoğraflar) ya da CSV.</li>
+    <li><strong>Tek kaydı sil:</strong> kaydın panelinde “Sil”. Silinen kayıt hiçbir ekranda ya da dışa aktarmada görünmez.</li>
+    <li><strong>Tüm veriyi sil:</strong> Android Ayarlar → Uygulamalar → GramSet → Depolama → “Verileri temizle”, ya da uygulamayı kaldır. Sunucuda hiçbir verin olmadığı için başka bir silme talebi gerekmez. Dışarı aldığın yedekleri ve otomatik yedek klasörünü sen silersin.</li>
+    <li><strong>Hata raporunu sil:</strong> Ayarlar → Veri → “Son hata raporu” → “Sil”.</li>
+  </ul>
+
+  <h2>6. Çocuklar</h2>
+  <p>GramSet 16 yaşından küçükler için tasarlanmamıştır ve çocuklardan bilerek veri toplamaz. Zaten hiçbir veri geliştiriciye ulaşmadığı için uygulama içinde yaş ya da kimlik bilgisi istenmez.</p>
+
+  <h2>7. Değişiklikler</h2>
+  <p>Uygulamanın veri akışı değişirse (örneğin yeni bir izin ya da yeni bir dış servis) bu sayfa güncellenir, üstteki yürürlük tarihi değişir ve değişiklik uygulamanın mağaza sayfasındaki sürüm notlarında belirtilir.</p>
+
+  <h2>8. İletişim</h2>
+  <p>Geliştirici: Marulas Studio. Gizlilik soruları, veri talepleri ve geri bildirim için: <a href="mailto:gramset.app@gmail.com">gramset.app@gmail.com</a>. Uygulama içinden: Ayarlar → Geri bildirim gönder.</p>
+  <p>Geri bildirim için gönderdiğin e-posta adresi ve form yanıtları yalnızca sana yanıt vermek için kullanılır; başka bir amaçla işlenmez ve kimseyle paylaşılmaz. KVKK (6698 sayılı Kişisel Verilerin Korunması Kanunu) ve GDPR kapsamındaki haklarını (bilgi alma, erişim, düzeltme, silme) kullanmak için <a href="mailto:gramset.app@gmail.com">gramset.app@gmail.com</a> adresine yazabilirsin.</p>
+</main>
+</body>
+</html>
